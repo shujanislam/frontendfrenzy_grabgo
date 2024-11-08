@@ -1,3 +1,56 @@
+// Function to update the quantity and price dynamically
+function incrementQuantity(itemId, pricePerUnit) {
+    const quantityElement = document.getElementById(itemId);
+    let quantity = parseInt(quantityElement.innerText);
+    quantityElement.innerText = ++quantity;
+    updatePrice(itemId, pricePerUnit, quantity);
+    updateTotal();
+}
+
+function decrementQuantity(itemId, pricePerUnit) {
+    const quantityElement = document.getElementById(itemId);
+    let quantity = parseInt(quantityElement.innerText);
+    if (quantity > 1) {
+        quantityElement.innerText = --quantity;
+        updatePrice(itemId, pricePerUnit, quantity);
+        updateTotal();
+    }
+}
+
+// Update the price of an item based on its quantity
+function updatePrice(itemId, pricePerUnit, quantity) {
+    const priceElement = document.getElementById(itemId.replace('Qty', 'Price'));
+    priceElement.innerText = (pricePerUnit * quantity).toFixed(2);
+}
+
+// Update the total, including tax and delivery
+function updateTotal() {
+    const cheeseBurgerTotal = parseFloat(document.getElementById('cheeseBurgerPrice').innerText);
+    const pepperoniPizzaTotal = parseFloat(document.getElementById('pepperoniPizzaPrice').innerText);
+    const sushiPlatterTotal = parseFloat(document.getElementById('sushiPlatterPrice').innerText);
+    
+    // Calculate subtotal (before tax and delivery charges)
+    const subtotal = cheeseBurgerTotal + pepperoniPizzaTotal + sushiPlatterTotal;
+
+    console.log('Subtotal:', subtotal);  // Debugging line
+
+    // Tax and Delivery charges
+    const tax = subtotal * 0.10; // 10% tax
+    const deliveryCharges = 5.00; // Fixed delivery charge
+
+    // Calculate total with tax and delivery
+    const total = subtotal + tax + deliveryCharges;
+
+    console.log('Tax:', tax);  // Debugging line
+    console.log('Delivery Charges:', deliveryCharges);  // Debugging line
+    console.log('Total:', total);  // Debugging line
+
+    // Update the subtotal, tax, delivery, and total in the modal
+    document.getElementById('subtotalPrice').innerText = subtotal.toFixed(2);
+    document.getElementById('taxPrice').innerText = tax.toFixed(2);
+    document.getElementById('deliveryCharges').innerText = deliveryCharges.toFixed(2);
+    document.getElementById('totalPrice').innerText = total.toFixed(2);
+}
 const foodData = [
     {
         "food_name": "Spaghetti Carbonara",

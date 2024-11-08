@@ -1,0 +1,172 @@
+body{
+    overflow-x: hidden;
+}
+ 
+ /* Custom styling for banner */
+ .banner {
+    background-image: url('https://png.pngtree.com/thumb_back/fw800/background/20240612/pngtree-cookies-with-coffee-beans-and-milk-image_15748825.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 80px 20px;
+    position: relative;
+}
+
+.banner2 {
+    background-image: url('https://media.istockphoto.com/id/1144820743/photo/pizza-chef-preparing-pizza-at-the-restaurant.jpg?s=612x612&w=0&k=20&c=QMcGU_j2hwvl7LG-KmWXCfnYVulH_b8zywKLSmHswRo=');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 80px 20px;
+    position: relative;
+}
+
+.navbar{
+        height: 80px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+.nav-link{
+    margin-left: 30px;
+}
+
+.banner-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay for readability */
+}
+
+.banner-content {
+    position: relative;
+    z-index: 1;
+}
+
+.discount-text {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffeb3b; /* Highlighted discount color */
+}
+
+.banner-btn {
+    background-color: #b42bf4;
+    color: #ffffff;
+    border: none;
+}
+
+.search-btn{
+    background-color: #b42bf4;
+    color: white;
+}
+       /* Top Restaurants Cards */
+.restaurant-card {
+    width: 100%;
+    background-color: #f8f9fa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+    font-size: 1rem;
+    height: 120px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for scaling and shadow */
+}
+
+/* Hover Effect */
+.restaurant-card:hover {
+    transform: scale(1.05); /* Scale up the card */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increase shadow size */
+    cursor: pointer; /* Change the cursor to indicate it's clickable */
+}
+
+        /* Popular Dishes Cards */
+        .food-card .card-body {
+            text-align: center;
+        }
+        .food-card-title {
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+        .food-card-price {
+            font-size: 1rem;
+            color: #555;
+        }
+
+.footer{
+    margin-top: 100px;
+    width: 100%;
+}
+
+@media (max-width: 767px) {
+    .footer .col-lg-3,
+    .footer .col-lg-2 {
+        text-align: center;
+    }
+
+    .footer .col-md-6 {
+        text-align: center;
+    }
+    
+    .footer h5,
+    .footer h6 {
+        font-size: 1.2rem;
+    }
+
+    .footer ul {
+        padding-left: 0;
+        list-style-type: none;
+    }
+}
+
+.personal-details{
+    font-weight: bold;
+}
+
+.discount-section{
+    font-weight: bold;
+}
+
+/* Payment Info Section */
+.payment-info-section {
+    margin-top: 50px;
+}
+
+.payment-info-section h3 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.payment-info-section .form-label {
+    font-weight: bold;
+}
+
+/* Adjusting the form fields */
+.payment-info-section .form-group {
+    margin-bottom: 1rem;
+}
+
+.payment-info-section .col-form-label {
+    font-weight: bold;
+}
+
+/* Making Expiry Date and CVV fields smaller */
+.payment-info-section .form-small {
+    max-width: 200px;
+}
+
+/* Styling for making fields side by side */
+.payment-info-section .row {
+    justify-content: center;
+}
+
+.personal-details-header, .payment-details-header, .discount-details-header{
+    font-weight: bold;
+    font-size: 18px;
+}

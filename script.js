@@ -58,42 +58,42 @@ const foodData = [
         "food_price": 12.50,
         "food_description": "Spaghetti with creamy sauce, pancetta, and Parmesan cheese.",
         "restaurant_name": "Italiano Bistro",
-        "image_url": "img/margherita.jpg"
+        "image_url": "margherita.jpg"
     },
     {
         "food_name": "Beef Burger",
         "food_price": 10.00,
         "food_description": "Juicy beef patty with lettuce, tomato, cheese, and special sauce.",
         "restaurant_name": "Burger Joint",
-        "image_url": "img/burger.jpg"
+        "image_url": "burger.jpg"
     },
     {
         "food_name": "Butter Chicken",
         "food_price": 13.00,
         "food_description": "Tender chicken in a creamy, spiced tomato sauce with naan bread.",
         "restaurant_name": "Taste of India",
-        "image_url": "img/butterchicken.jpg"
+        "image_url": "butterchicken.jpg"
     },
     {
         "food_name": "Beef Burger",
         "food_price": 10.00,
         "food_description": "Juicy beef patty with lettuce, tomato, cheese, and special sauce.",
         "restaurant_name": "Burger Joint",
-        "image_url": "img/burger.jpg"
+        "image_url": "burger.jpg"
     },
     {
         "food_name": "Spaghetti Carbonara",
         "food_price": 12.50,
         "food_description": "Spaghetti with creamy sauce, pancetta, and Parmesan cheese.",
         "restaurant_name": "Italiano Bistro",
-        "image_url": "img/margherita.jpg"
+        "image_url": "margherita.jpg"
     },
     {
         "food_name": "Butter Chicken",
         "food_price": 13.00,
         "food_description": "Tender chicken in a creamy, spiced tomato sauce with naan bread.",
         "restaurant_name": "Taste of India",
-        "image_url": "img/butterchicken.jpg"
+        "image_url": "butterchicken.jpg"
     }
 ];
 
